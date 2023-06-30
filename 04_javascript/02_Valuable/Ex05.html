@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            [문제] 키보드로 회원의 이름과 나이, 연락처를 입력 받아서 화면에 출력해 보세요.
+                 document.write() 함수를 이용할 것.
+        */
+
+        let name = prompt("회원님의 이름을 입력해 주세요.");
+
+        let age = parseInt(prompt(`${name}님의 나이를 입력해 주세요.`));
+
+        let num = prompt(`${name}님의 연락처를 입력해 주세요.`);
+
+        document.write(`회원님의 정보는 다음과 같습니다.<br><br>
+                        이름 : ${name}<br>
+                        나이 : ${age}<br>
+                        연락처 : ${num}`);
+
+        // // 1. 키보드로 이름, 나이, 연락처를 입력 받자.
+        // var name =  prompt("회원의 이름을 입력하세요.");
+        // var age =  prompt("회원의 나이을 입력하세요.");
+        // var phone =  prompt("회원의 연락처을 입력하세요.");
+
+        // // 2. 입력 받은 정보를 화면에 출력 하자.
+        // document.write(`<h2>회원 이름 : ${name} <br />`);
+        // document.write(`<h2>회원 나이 : ${age} <br />`);
+        // document.write(`<h2>회원 연락처 : ${phone} </h2>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

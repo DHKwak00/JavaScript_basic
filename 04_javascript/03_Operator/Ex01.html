@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 산술연산자(+, -, *, /(몫), %(나머지))
+        var num1 = Number(prompt("첫번째 정수 입력"));
+        var num2 = Number(prompt("두번째 정수 입력"));
+        
+        var result = num1 + num2;
+        document.write(`${num1} + ${num2} = ${result} <br />`);
+
+        var result = num1 - num2;
+        document.write(`${num1} - ${num2} = ${result} <br />`);
+
+        var result = num1 * num2;
+        document.write(`${num1} * ${num2} = ${result} <br />`);
+
+        var result = num1 / num2;
+        document.write(`${num1} / ${num2} = ${result.toFixed(2)} <br />`); // .toFixed() 실수의 소숫점()자리까지 출력할지 결정
+
+        var result = num1 % num2;
+        document.write(`${num1} % ${num2} = ${result} <br />`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

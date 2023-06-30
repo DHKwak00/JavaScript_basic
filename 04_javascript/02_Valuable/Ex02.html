@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            자바스크립트에서 입력 대화 상자
+             1. confirm() : 확인창
+                 - 확인 또는 취소 버튼이 나타나는 상자 
+                    [확인] >> true로 반환 / [취소] >> false로 반환
+                 ex) window.confirm("문자열");
+
+             2. prompt() : 입력창
+                 - 키보드로 데이터를 입력 받을 떄 사용하는 상자
+                 ex) window.prompt("문자열", [초기값 - 생략 가능])
+                 - prompt 로 입력 받은 숫자는 숫자가 아닌 문자이다.
+                 - 문자열을 숫자로 바꿔주는 함수
+                 number() 함수 : () 안에 있는 문자열을 숫자로 바꿔 주는 함수
+                 parseInt() 함수 : "
+        */
+
+       var ampm =  confirm("현재 시간은 오후인가요?")
+
+       console.log(ampm);
+       
+       var name = prompt("이름을 입력하세요.");
+
+       console.log(name);
+
+       var num = parseInt(prompt("정수를 입력하세요."));
+
+       console.log(Number(num) + 33);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

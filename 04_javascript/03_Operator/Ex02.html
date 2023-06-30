@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            관계(비교) 연산자
+             - >=, >, <=, ==, !=, ===
+             - 관계 연산자의 결과값은 boolean형(true / false) 로 나온다.
+        */
+
+        var su1 = 10, su2 = 3;
+
+        document.write(`${su1} >= ${su2} ==> ${su1 >= su2} <br />`);
+        document.write(`${su1} > ${su2} ==> ${su1 > su2} <br />`);
+        document.write(`${su1} <= ${su2} ==> ${su1 <= su2} <br />`);
+        document.write(`${su1} < ${su2} ==> ${su1 < su2} <br />`);
+        document.write(`${su1} == ${su2} ==> ${su1 == su2} <br />`);
+        document.write(`${su1} != ${su2} ==> ${su1 != su2} <br />`);
+
+        document.write("<br/>")
+
+        var su3 = "1000";
+        var su4 = 1000;
+        document.write(`${su1} == ${su4} ==> ${su3 == su4} <br />`);
+        /*
+            동등연산자 (==)
+             - 동등연산자는 비교 대상 값의 자료형이 다른 경우 강제로 자료형을 바꾼 뒤에 비교를 한다.
+             - 좌변항과 우변항을 비교하여 값이 자료형과 상관없이 내용이 같다고 한다면 true 값을, 틀리면 false 값을 반환 
+        */
+
+        document.write(`${su1} === ${su4} ==> ${su3 === su4} <br />`);
+        /*
+            일치연산자(===)
+            - 일치연산자는 좌변항과 우변항의 내용이 정확하게 일치하면 true, 다르면 false값으로 반환
+            - 좌변항과 우변항의 값이 같고, 좌변항의 자료형과 우변항의 자료형이 일치하면 true , 아니면 false 값을 반환
+            - 즉, 내용뿐 아니라 자료형까지 일치해야 true 값을 반환해 줌
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
