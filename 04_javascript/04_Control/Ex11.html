@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            while 반복문
+             - 반복해서 실행할 때 사용되는 문장
+             ex)
+                while(조건식) {
+                    반복 실행 문장;
+                }
+             - 조건식을 비교하여 조건식이 참인 경우 반복 실행 문장을 계속적으로 실행함
+             - 조건식이 거짓인 경우에는 반복문을 빠져나가는 문장
+             - 반복문에는 반드시 초기식, 조건식, 증감식이 존재함
+             - while 반복문은 반목문의 횟수를 알 수 없는 경우에 많이 사용
+        */
+       document.write(` su >>> 1 <br>`);
+       document.write(` su >>> 2 <br>`);
+       document.write(` su >>> 3 <br>`);
+       document.write(` su >>> 4 <br>`);
+       document.write(` su >>> 5 <br>`);
+       document.write(` su >>> 6 <br>`);
+       document.write(` su >>> 7 <br>`);
+       document.write(` su >>> 8 <br>`);
+       document.write(` su >>> 9 <br>`);
+       document.write(` su >>> 10 <br>`);
+
+       document.write("<hr>");
+
+       // 반복문을 이용하여 1부터 10까지 출력해주ㅏ
+       var su = 1; // 반복문 초기식
+
+        while(su <= 10){ // 반복문에서 조건식
+         document.write(`su >>> ${su} <br>`);
+          su++; //반복문에서 증감식
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

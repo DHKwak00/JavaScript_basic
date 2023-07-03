@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1~100까지의 홀수의 합과 짝수의 합을 구해보자
+        var oddSum = 0; evenSum = 0;
+        for(var su = 1; su <=100; su++) {
+            if(su % 2 != 0) {
+                oddSum = oddSum + su;
+            }else {
+                evenSum = evenSum +su;
+            }
+        }
+        document.write(`${oddSum}, ${evenSum}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

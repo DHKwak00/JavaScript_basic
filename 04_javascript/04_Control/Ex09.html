@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            switch문
+             - 다중 if~else문과 유사한 구조를 가지고 있음
+             ex)
+                switch(조건) {
+                    case 값1 : 값1에 만족할 경우 실행문;
+                                break;
+                    case 값2 : 값2에 만족할 경우 실행문;
+                                break;
+                    case 값3 : 값3에 만족할 경우 실행문;
+                                break;
+                    default : 값1 ~ 값3 이외의 값이 들어온 경우 실행문
+                }
+             - 다중 if~else문을 switch문으로 변경할 수 있는 경우는 조건식이 특정한 값과 일치되는 경우(==)만 변경 가능
+             - 즉, 조건식이 == 인 경우를 제외하고 나머지 관계 연산자(>=, >, <=, !=)와 같은 비교 연산자를 사용한 경우에는 변경할 수 없음
+        */
+    
+    var site = prompt("네이버, 구글, 다음 중 자주 이용하는 사이트는?");
+    var url;
+
+    switch(site) {
+        case "네이버" : url = "www.naver.com";
+                        break;
+        case "구글" : url = "www.google.com";
+                        break;
+        case "다음" : url = "www.daum.net";
+                        break;
+        default : alert("보기 중에 없는 사이트 입니다.")
+    }
+
+    if(url) {
+        // 실제 페이지로 이동이 진행되는 명령어
+        location.href = "http://"+url;
+    }else {
+        // 현재 페이지를 새로 고침하는 명령어
+        location.reload();
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

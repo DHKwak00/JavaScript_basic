@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            난수를 발생시켜서 추첨을 통해 경품을 받게 만들어 보자
+
+            <요구사항>
+             - 1~10 사이의 숫자를 랜덤하게 뽑아 보자
+             - 3번 : 냉장고 당첨 / 5번 : 노트북 / 8번 : tv 당첨
+             - 그 외의 번호는 "꽝"
+
+             - 난수를 발생시키는 함수
+             Math.floor(math.random() + 마지막 숫자) - 시작 숫자
+        */
+
+        var luckyNo = Math.floor(Math.random()*10) +1;
+
+        switch(luckyNo) {
+            case 3 : document.write("냉장고에 당첨 되었습니다.");
+                    break;
+            case 5 : document.write("노트북에 당첨 되었습니다.");
+                    break;
+            case 8 : document.write("TV 당첨 되었습니다.");
+                    break;
+            default : document.write(`${luckyNo}가 나왔습니다`);
+                     document.write("꽝이네요~");
+                     break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
