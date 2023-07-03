@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var walk =Number(prompt("내가 하루에 걷는 걸음은 몇 걸음인가요?"));
+
+        if(walk >= 10000) {
+            document.write("당신은 건장에 좋은 습관을 가지고 계시는군요! <br>");
+        }
+        document.write("<hr>");
+
+        var visit =  prompt("방문자의 이름은?");
+
+        // 조건식에 0, null, "", undefined >> false 
+        if(visit) {
+            document.write(`${visit} 님 환영합니다!!`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

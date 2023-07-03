@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userId =  prompt("아이디를 입력하세요.");
+
+        var userPwd =  prompt("비밀번호를 입력하세요.");
+
+        // // 첫번째 방법
+        // if(userId == "hong" && userPwd == "1234"){
+        //     document.write("환영합니다!");
+        // }else {
+        //     alert("아이디와 비밀번호를 확인하세요.")
+        // }
+
+        // 두번째 방법
+        if(userId == "hong") {
+            if(userPwd == "1234"){
+                document.write("환영합니다.");
+            }else {
+                document.write("비밀번호가 틀립니다.");
+            }
+        }else {
+            document.write("맞는 아이디가 아닙니다.");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
