@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            함수(function) : 기능을 정의해 놓은 것
+             - 함수는 하나의 로직을 재사용할 수 있도록 하는 것으로 코드의 재사용성을 높여줌
+             ex)
+                    function 함수이름(매개변수1, 매개변수2) { 
+                        함수 호출 시 실행될 문장;
+                    }
+             - 함수 사용시 장점
+             1. 코드의 중복 제거 및 코드 재사용 가능
+             2. 유지보수 용이성
+
+             - 자바스크립트 함수의 종류
+             1. 사용자 정의 함수 : 사용자(개발자)가 직접 만들어 놓은 함수
+             2. 내장 함수 : 자바스크립트에서 자체적으로 제공하는 함수
+        */
+
+        function hello() {
+            alert("안녕하세요? 반갑습니다.");
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="hello()" value="버튼클릭" />
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function get_members() {
+            return ["java", "javascript", "html5", "css3"];
+        }
+
+        const members = get_members();
+
+        for(var i=0; i<members.length; i++){
+            document.write(`members[${i}] >>> ${members[i]} <br>`);
+        }
+
+        document.write(`<hr>`);
+
+        for(var i=0; i<members.length; i++){
+            document.write(`members[${i}] >>> ${members[i].toUpperCase()} <br>`);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
