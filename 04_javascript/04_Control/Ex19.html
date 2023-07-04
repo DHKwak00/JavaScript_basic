@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            [문제3] 아래와 같이 화면에 출력해 보자
+
+                *******
+                *******
+                *******
+                *******
+                *******
+
+            [문제4] 아래와 같이 화면에 출력해 보자
+
+                *
+                **
+                ***
+                ****
+                *****
+                ******
+                *******
+
+            [문제5] 아래와 같이 화면에 출력해 보자
+
+                *******
+                ******
+                *****
+                ****
+                ***
+                **
+                *
+        */
+
+        // [문제3]
+        var dot = "*"
+        for(var i=0; i<5; i++) {
+            for(var j=0; j<7; j++){
+                document.write(dot);
+            }
+            document.write("<br>");
+        }
+
+        document.write(`<hr>`);
+
+        // [문제4]
+        var dot = "*"
+        
+        for(var i=0; i<7; i++) {
+            for(var j=0; j<=i; j++){
+                document.write(dot);
+            }
+            document.write("<br>");
+        }
+
+        document.write(`<hr>`);
+
+        // [문제5]
+        var dot = "*"
+        var num = 7;
+        for(var i=7; i>0; i--) {
+            for(var j=0; j<i; j++){
+                document.write(dot);
+            }
+            document.write("<br>");
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

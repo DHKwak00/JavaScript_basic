@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            다중 for문
+             - for문 안에 또 다른 for문을 가지고 있는 형태
+             ex)
+                    for(초기식1; 조건식1; 증감식1) {
+                        반복 실행 문장;
+                        for(초기식2; 조건식2; 증감식2) {
+                            반복 실행 문장;
+                        }
+                    }
+        */
+
+        for(var i=1; i<=3; i++) {
+            for(var j=1; j<=3; j++) {
+                document.write(`(${i}, ${j})`);
+            }
+            document.write(`<br>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

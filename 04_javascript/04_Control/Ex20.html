@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            [문제6] 아래와 같이 화면에 출력하자
+
+                *
+                **
+                ***
+                ****
+                *****
+                ****
+                ***
+                **
+                *
+            
+            [문제7] 아래와 같이 화면에 출력해 보세요
+
+                ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                ABCDEFGHIJKLMNOPQRSTUVWXY
+                ABCDEFGHIJKLMNOPQRSTUVWX
+                ABCDEFGHIJKLMNOPQRSTUVW
+                ABCDEFGHIJKLMNOPQRSTUV
+                ABCDEFGHIJKLMNOPQRSTU
+                ABCDEFGHIJKLMNOPQRST
+                ABCDEFGHIJKLMNOPQRS
+                ABCDEFGHIJKLMNOPQR
+                ABCDEFGHIJKLMNOPQ
+                ABCDEFGHIJKLMNOP
+                ABCDEFGHIJKLMNO
+                ABCDEFGHIJKLMN
+                ABCDEFGHIJKLM
+                ABCDEFGHIJKL
+                ABCDEFGHIJK
+                ABCDEFGHIJ
+                ABCDEFGHI
+                ABCDEFGH
+                ABCDEFG
+                ABCDEF
+                ABCDE
+                ABCD
+                ABC
+                AB
+                A
+        */
+
+        // [문제6]
+
+        for(var i=0; i<5; i++) {
+            for(var j=0; j<=i; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+        for(var i=4; i>0; i--) {
+            for(var j=0; j<i; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write(`<hr>`);
+
+        // [문제7]
+
+        var alp = "charCodeAt"
+        for(var i=90; i>=65; i--) {
+            for(var j=65; j<=i; j++){
+                document.write(String.fromCharCode(j));
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
