@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const person = {}
+
+        person.이름 = prompt("이름을 입력하세요.");
+        person.나이 = prompt("나이를 입력하세요.");
+        person.연락처 = prompt("연락처를 입력하세요.");
+
+        for(var k in person) {
+            document.write(`${k} : ${person[k]} <br>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

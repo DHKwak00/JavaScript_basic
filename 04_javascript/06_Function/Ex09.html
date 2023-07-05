@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callThreeTimes(callback) {
+
+            for(var i=0; i<3; i++) {
+                callback(i);
+            }
+        }
+
+        // function print(su) {
+        //     document.write(`${su+1} 번째 함수 호출!!! <br />`);
+        // }
+
+        callThreeTimes(function (su) {
+            document.write(`${su+1} 번째 함수 호출!!! <br />`);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

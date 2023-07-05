@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+          A부터 B까지 더하는 함수를 만들어서 호출해 보자.
+          조건) 함수에서 나온 결과값을 반환을 할 것.
+        */
+
+        function total(su1, su2) {
+            var sum = 0; // 더한 값을 저장할 변수
+
+            for(var i=su1; i<=su2; i++) {
+                sum = sum + i;
+            }
+            return sum;
+        }
+
+        var su1 = Number(prompt("시작할 첫번째 정수를 입력....."));
+
+        var su2 = Number(prompt("마지막 두번째 정수를 입력....."));
+
+        document.write(`${su1} ~ ${su2} 까지의 합 >>> ${total(su1, su2)} <br />`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
