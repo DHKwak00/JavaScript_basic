@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+            /*
+            노드(태그)를 만드는 방법
+            ex) document.createElement("태그이름");
+            ex) document.createTextNode("텍스트");
+        */
+
+        // 1. 태그(요소)를 만들어 보자
+        var h1_element = document.createElement("h1");
+
+        // 2. 텍스트 요소를 만들어 보자
+        var text = document.createTextNode("방가방가 DOM")
+
+        // 3. 텍스트 노드를 h1 태그의 자식으로 등록해주기
+        h1_element.appendChild(text);
+
+        // 4. h1 태그를 문서의 body 태그에 자식으로 추가
+        document.body.appendChild(h1_element);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

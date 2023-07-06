@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+            /*
+                문서에서 요소를 찾는 방법 (3가지)
+                3. getElementsByClassName(class이름);
+                    ==> class 이름과 일치하는 요소를 배열로 가져오는 함수
+            */
+           var users = document.getElementsByClassName("user");
+
+           for(var i=0; i<users.length; i++) {
+            users[i].innerHTML = "<b style='color: red;'>클래스 요소</b>" // 기존에 "" 사용하지만 겉이 ""면 ''으로 사용 (반대 상황도)
+           }
+        }
+    </script>
+</head>
+<body>
+    <p class="user">이름 : 홍길동</p>
+    <p class="user">주소 : 서울시 구로구</p>
+    <p class="user">연락처 : 02)1234-1234</p>
+</body>
+</html>

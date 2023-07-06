@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+            /*
+                문서에서 요소를 찾는 방법 (3가지)
+                2. getElementsByTagName(tag이름);
+                    ==> tag 이름과 일치하는 요소를 배열로 가져오는 함수
+            */
+
+            var p_elements = document.getElementsByTagName("p");
+
+            console.log("p 태그 길이 >> " + p_elements.length);
+
+            p_elements[0].innerHTML = "<b>세종대왕</b>";
+        }
+    </script>
+</head>
+<body>
+    <h1>Title</h1>
+
+    <p>이름 : 홍길동</p>
+    <p>주소 : 서울시 구로구</p>
+    <p>연락처 : 02)1234-1234</p>
+</body>
+</html>

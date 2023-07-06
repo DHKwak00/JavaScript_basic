@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        /*
+            [문제] 문서에서 id="header"와 id="footer" 노드를 찾아서 아래와 같이 적용하여 화면에 출력
+                   id="header" ==> 테두리선 : 3px solid red;
+                   id="footer" ==> 테두리선 : 3px solid blue;
+        */
+       onload = () => {
+        var header = document.querySelector("#header");
+        header.style.border = "3px solid red";
+
+        var footer = document.querySelector("#footer");
+        footer.style.border = "3px solid blue";
+       }
+    </script>
+</head>
+<body>
+    <div id="sample_page" class="page">
+        샘플 페이지(div id="sample_page" class="page")
+        <div id="header">
+            헤더 영역(div id="header")
+        </div> <!-- id="header" end -->
+
+        <div id="content" class="sample_content">
+            컨텐트 영역(div id="content" class="sample_content")
+
+            <div>
+                javaScript란?
+                <p id="data_1">자바스크립트 Core(p, id=data_1)</p>
+                <p id="data_1">자바스크립트 BOM(p,id=data_2)</p>
+                <p id="data_1">자바스크립트 DOM(p, id=data_3)</p>
+                을 배운다는 것
+            </div>
+
+            <div class="content_data">
+                javaScript에서 배우는 내용(div class="content_data")
+                <p>1. javaScript BOM(p)</p>
+                <p>2. javaScript DOM(p)</p>
+            </div> <!-- class="content_data" end -->
+
+            <div class="content_data">
+                javaScript에서 배우는 내용(div class="content_data")
+                <p>1. javaScript BOM(p)</p>
+                <p>2. javaScript DOM(p)</p>
+            </div> <!-- class="content_data" end -->
+        </div>
+
+        <div id="footer" class=""> 
+            푸터의 영역(div id="footer")
+
+        </div>
+    </div>
+</body>
+</html>

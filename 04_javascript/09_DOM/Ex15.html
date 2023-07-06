@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            DOM에서 노드(요소)를 삭제하는 방법
+            ex) 부모요소.removeChild(자식요소)
+        */
+
+        onload = function() {
+
+            // 1. 삭제할 노드(요소)를 가져온다.
+            var header2 = document.querySelector("#header_2");
+
+            // 2. 삭제할 노드의 부모 노드를 찾는다.
+            var parent = header2.parentNode;
+
+            parent.removeChild(header2);
+
+            // header2.parentNode.removeChild(header2); 변수 안쓰고 삭제하기 
+
+            // document.body.removeChild(header2);
+        }
+    </script>
+</head>
+<body>
+    <h1 id="header_1">HEADER1</h1>
+    <h1 id="header_2">HEADER2</h1>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        onload = () => {
+            var sample = document.querySelector("#sample_page");
+            
+            var first = sample.firstChild;
+
+            var p_element = document.createElement("p");
+
+            p_element.textContent = "추가내용1";
+
+            p_element.style.border = "3px solid red"
+
+            // 노드를 추가할 예정 ==> 특정한 노드 앞에 추가
+            // 형식) 부모노드.insertBefore(삽입할 노드, 기준점노드)
+
+            sample.insertBefore(p_element, first);
+
+            // 노드를 복사하는 방법
+            var p2_element = p_element.cloneNode(true);
+            sample.appendChild(p2_element);
+        }
+    </script>
+</head>
+<body>
+    <div id="sample_page" class="page">
+        샘플 페이지(div id="sample_page" class="page")
+        <div id="header">
+            헤더 영역(div id="header")
+        </div> <!-- id="header" end -->
+        <div id="content" class="sample_content">
+            컨텐트 영역(div id="content" class="sample_content")
+
+            <div>
+                javaScript란?
+                <p id="data_1">자바스크립트 Core(p.id=data_1)</p>
+                <p id="data_1">자바스크립트 BOM(p.id=data_2)</p>
+                <p id="data_1">자바스크립트 DOM(p.id=data_3)</p>
+                을 배운다는 것
+            </div>
+
+            <div class="content_data">
+                javaScript에서 배우는 내용(div class="content_data")
+                <p>1. javaScript BOM(p)</p>
+                <p>2. javaScript DOM(p)</p>
+            </div> <!-- class="content_data" end -->
+
+            <div class="content_data">
+                javaScript에서 배우는 내용(div class="content_data")
+                <p>1. javaScript BOM(p)</p>
+                <p>2. javaScript DOM(p)</p>
+            </div> <!-- class="content_data" end -->
+        </div>
+
+        <div id="footer"> 
+            푸터의 영역(div id="footer")
+        </div> <!-- id="footer" end -->
+    </div>
+</body>
+</html>

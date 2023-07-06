@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            [문제] 아래와 같이 DOM을 추가하여 브라우저에 보여주세요
+
+                 <h2>제목태그2</h2>
+                 <p>본문태그</p>
+        */
+
+        onload = function() {
+            var h2_element = document.createElement("h2");
+            var h2_text = document.createTextNode("제목태그2");
+
+            var p_element = document.createElement("p");
+            var p_text = document.createTextNode("본문태그");
+
+            h2_element.appendChild(h2_text);
+            document.body.appendChild(h2_element);
+
+            p_element.appendChild(p_text);
+            document.body.appendChild(p_text);
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

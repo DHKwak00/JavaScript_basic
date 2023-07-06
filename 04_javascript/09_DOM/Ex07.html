@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+            /*
+                문서에서 요소를 찾는 방법 (3가지)
+                1. getElementById("id이름");
+                    ==> 문서에서 특정 id를 가진 요소 찾기
+            */
+           var header1 = document.getElementById("header_1"); // # 쓸 필요 없음
+           var header2 = document.getElementById("header_2");
+
+           header1.style.border = "1px solid red";
+
+           header2.innerHTML = "안녕하세요.";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="header_1">HEADER_1</h1>
+    <h1 id="header_2">HEADER_2</h1>
+
+</body>
+</html>

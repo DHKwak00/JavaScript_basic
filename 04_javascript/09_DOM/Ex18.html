@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            [문제] 해당 글자를 클릭하면 "요소의 덱스트가 변경되었습니다."
+            라는 글자로 변경 되도록 하고, 글자색은 빨간색, 해당 요소의 테두리선은 파란색으로 DOM 변경
+        */
+
+        onload = function() {
+            var txt = document.querySelector("#class");
+
+            txt.onclick = function() {
+                txt.textContent = "요소의 덱스트가 변경되었습니다.";
+                txt.style.color = "red";
+                txt.style.border = "1px solid blue";
+            }
+
+        }
+
+        onload = () => { // js 최신 버전에선 function 대신 => 기호로 대체
+            var txt = document.querySelector("#class");
+
+            txt.onclick = () => {
+                txt.textContent = "요소의 덱스트가 변경되었습니다.";
+                txt.style.color = "red";
+                txt.style.border = "1px solid blue";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="class">이것이 div 요소입니다.</div>
+</body>
+</html>

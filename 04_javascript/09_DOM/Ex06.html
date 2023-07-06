@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+            // querySelector 선택자 가져오기
+            var a = document.querySelector("#a");
+            var b = document.querySelector("#b");
+
+            /*
+                - textContent : 입력된 문자열을 그대로 넣음
+                - innerHTML : 입력된 문자열을 HTML 형식으로 넣음
+            */
+            a.textContent = "<h1>textContent 속성</h1>"; // "" 안을 문자열로 인식
+            b.innerHTML = "<h1>innerHTML 속성</h1>"; // "" 안을 html 태그로 인식
+        }
+    </script>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+
+</body>
+</html>

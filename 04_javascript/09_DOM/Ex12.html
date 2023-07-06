@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        onload = function() {
+
+            // 1. DOM을 이용하여 이미지 태그를 만들어 보자
+            var img_element = document.createElement("img");
+
+            // 2. 속성을 지정해 주어야 함
+            //    속성을 지정해 주는 함수가 있음
+            //    ==> setAttribute("속성명", "value(값)");
+            img_element.setAttribute("src", "../images/pf.png");
+            img_element.setAttribute("alt", "이미지");
+            img_element.setAttribute("width", "150");
+            img_element.setAttribute("height", "150");
+
+            // 3. DOM으로 만든 img 태그를 문서의 body에 추가
+            document.body.appendChild(img_element);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

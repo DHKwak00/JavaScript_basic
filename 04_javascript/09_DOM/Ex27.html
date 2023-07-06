@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        onload = () => {
+            var first_div = document.querySelector("#first");
+
+            var second_div = document.querySelector("#second");
+
+            var h1_element = document.createElement("h1");
+
+            h1_element.textContent = "이동하는 h1 태그";
+
+            var toFirst = () => {
+                first_div.appendChild(h1_element);
+                setTimeout(toSecond, 1000);
+            }
+
+            var toSecond = () => {
+                second_div.appendChild(h1_element);
+                setTimeout(toFirst, 2000);
+            }
+            toFirst();
+        }
+    </script>
+</head>
+<body>
+    <div id="first">
+        <h1>첫번째 div 태그 내부</h1>
+    </div>
+
+    <hr />
+
+    <div id="second">
+        <h1>두번째 div 태그 내부</h1>
+    </div>
+</body>
+</html>
