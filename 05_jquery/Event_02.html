@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        /*
+            이벤트 이름 (목록)
+            blue, change, load, resize, scroll, select, submit, click, dbclick, mousedown, mouseup,mousemve, mouseover, mouseout, mouseleave,
+            focus, keydown, keypress, keyup
+        */
+
+        $(() => {
+            $(".menu li").on("click", function() { // 화살표 함수에는 this를 사용할 수 없다.
+                alert($(this).html());
+            });
+                
+        });
+    </script>
+</head>
+<body>
+    
+    <ul class="menu">
+        <li>짜장면</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <li>볶음밥</li>
+        <li>군만두</li>
+
+    </ul>
+</body>
+</html>

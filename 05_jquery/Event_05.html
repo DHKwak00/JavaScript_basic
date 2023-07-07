@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        /*
+            mousemove() : 선택한 요소의 영역에서 마우스를 움직일 때마다 이벤트가 발생
+             ex) $("요소선택").mousemove(function (매개변수) {....})
+        */
+
+        // $(() => {
+        //     $(document).mousemove(function() {
+                
+        //     })
+        // })
+
+        $(() => {
+            $(document).mousemove((e) => {
+                var x = e.pageX; // 마우스가 움직였을 때 x 좌표값
+                var y = e.pageY;
+
+                $("h2").text("x 좌표 : "+ x +"/ y 좌표 : "+ y);
+            })
+        })
+    </script>
+</head>
+<body>
+    
+    <h2></h2>
+
+</body>
+</html>

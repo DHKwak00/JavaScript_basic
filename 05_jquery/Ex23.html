@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        /*
+            val() / val(값)
+             - 입력 요소에 입력되어있는 value값을 가져오거나 변경할 때 사용하는 함수
+        */
+        $(function() {
+            // var userName = $("#user_name").val();
+            // $("#my_name").val(userName);
+
+            $("#my_name").val($("#user_name").val());
+        });
+    
+    </script>
+</head>
+<body>
+    <p>
+        <input type="text" name="user_name" id="user_name" value="홍길동">
+    </p>
+
+    <p>
+        <input type="text" name="user_name" id="user_name" value="my_name">
+    </p>
+</body>
+</html>
+</html>

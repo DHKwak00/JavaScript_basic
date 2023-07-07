@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        /*
+            제이쿼리 선택자 사용 방법
+             1. 직접 선택자
+                 - 전체 선택자 : $("*")
+                    ==> 모든 요소(태그)를 선택
+
+                 - 아이디 선택자 : $("#id")
+                    ==> id 속성에 지정된 이름을 가진 요소를 선택
+
+                 - 클래스 선택자 : $(".class")
+                    ==> class 속성에 지정된 이름을 가진 요쇼를 선택
+
+                 - 요소(태그) 선택자 : $("요소(태그)명")
+                    ==> 지정된 요소(태그)명과 일치하는 요소를 선택하는 선택자
+
+                 - 그룹 선택자 : $("선택1, 선택2, ... 선택n")
+                    ==> 선택1, 선택2, ... 선택n 에 지정된 요소르 한꺼번에 선택하는 선택자
+        */
+
+        $(function() {
+            // 전체 선택자 : $("*")
+            $("*").css("color", "blue");
+        });
+    </script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+
+    <h2>직접 선택자 및 관계 선택자</h2>
+
+    <h3>직접 선택자</h3>
+
+    <h3>관계 선택자</h3>
+
+</body>
+</html>

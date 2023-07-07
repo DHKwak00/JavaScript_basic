@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function() {
+            // 2-8. 형제 요소들 선택자 : $("요소선택").siblongs()
+            //      ==> 선택한 요소의 모든 형제 노드를 선택하는 선택자
+            //      ==> 선택한 요소는 제외
+            $(".content").siblings()
+                        .css("color", "blue");
+        })
+    </script>
+</head>
+<body>
+
+    <h2>인접 관계 선택자</h2>
+    <ul>
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li class="content">내용4</li>
+        <li>내용5</li>
+    </ul>
+
+</body>
+</html>
